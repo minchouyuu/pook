@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PÔÔK – Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/Artboard 130.png" alt="PÔÔK Snack"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <span class="nav-logo-fb" style="display:none">PÔÔK<br><small>snack</small></span>
+  </a>
+  <div class="nav-links">
+    <a href="story.html">Story</a>
+    <a href="products.html" class="active">Product</a>
+    <a href="contact.html">Contact</a>
+    <button class="burger" id="burgerBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="story.html">Story</a>
+  <a href="products.html">Product</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<div class="prod-hero has-stars">
+  <div class="mascot-strip">
+    <img src="images/Artboard 126.png" alt="" class="bob">
+    <img src="images/Artboard 127.png" alt="" class="bob2">
+    <img src="images/Artboard 128.png" alt="" class="bob3">
+    <img src="images/Artboard 129.png" alt="" class="bob4">
+  </div>
+  <h1 class="pg-title">Product</h1>
+  <div class="wave-down"></div>
+</div>
+
+<!-- PRODUCT GRID -->
+<section class="dark-sec has-stars-dark">
+  <div class="dark-inner ctr">
+    <div class="filter-row">
+      <button class="fbtn on" onclick="filterProd('all',this)">All</button>
+      <button class="fbtn" onclick="filterProd('can',this)">Can</button>
+      <button class="fbtn" onclick="filterProd('box',this)">Box</button>
+      <button class="fbtn" onclick="filterProd('crate',this)">Crate</button>
+    </div>
+    <div class="pgrid">
+
+      <!-- CANS -->
+      <div class="pcard filterable rv" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/cam cao 1.png" alt="Carrot Can"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Carrot Snack Can</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard filterable rv d1" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/hồng cao 1.png" alt="Beetroot Can"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Beetroot Snack Can</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard filterable rv d2" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/tím cao 1.png" alt="Sweet Potato Can"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Sweet Potato Can</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard filterable rv d3" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/xanh cao.png" alt="Lotus Root Can"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Lotus Root Can</div><div class="pprice">000.000đ</div></div>
+      </div>
+
+      <!-- MINI CANS -->
+      <div class="pcard filterable rv" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/cam thấp 1.png" alt="Carrot Mini"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Carrot – Mini</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard filterable rv d1" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/hồng thấp 1.png" alt="Beetroot Mini"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Beetroot – Mini</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard filterable rv d2" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/tím thấp 1.png" alt="Sweet Potato Mini"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Sweet Potato – Mini</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard filterable rv d3" data-cat="can" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/xanh thấp.png" alt="Lotus Mini"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Lotus Root – Mini</div><div class="pprice">000.000đ</div></div>
+      </div>
+
+      <!-- BOXES -->
+      <div class="pcard filterable rv" data-cat="box" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/hộp 4 1.png" alt="Box 4"></div>
+        <div class="pcard-body"><span class="ctag">Box</span><div class="pname">Gift Box – 4 Pack</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard filterable rv d1" data-cat="box" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/hộp 8.png" alt="Box 8"></div>
+        <div class="pcard-body"><span class="ctag">Box</span><div class="pname">Gift Box – 8 Pack</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <!-- Thay ảnh 3.png thành 4 lon 3.png ở đây -->
+      <div class="pcard filterable rv d2" data-cat="box" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/4 lon 3.png" alt="Mixed Set"></div>
+        <div class="pcard-body"><span class="ctag">Box</span><div class="pname">Mixed Can Set</div><div class="pprice">000.000đ</div></div>
+      </div>
+
+      <!-- CRATE -->
+      <div class="pcard filterable rv d3" data-cat="crate" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/thùng 1.png" alt="Crate"></div>
+        <div class="pcard-body"><span class="ctag">Crate</span><div class="pname">Full Crate</div><div class="pprice">000.000đ</div></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="wave-up"></div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec has-stars">
+  <div class="ctr">
+    <h2 class="faq-title rv">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item rv">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="fq-q">Q</span> Are PÔÔK snacks fried? What makes them so crispy?
+          <span class="fq-ico">+</span>
+        </button>
+        <div class="faq-ans">PÔÔK snacks are NOT fried. We use advanced low-temperature vacuum drying technology, which gently removes moisture while preserving the vegetable's natural color, flavor, and nutritional value — creating an incredibly satisfying crunch without any oil.</div>
+      </div>
+      <div class="faq-item rv d1">
+        <button class="faq-btn open" onclick="toggleFaq(this)">
+          <span class="fq-q">Q</span> Are your snacks suitable for vegans and people with gluten intolerance?
+          <span class="fq-ico">−</span>
+        </button>
+        <div class="faq-ans open">Absolutely! All our snacks are 100% plant-based, making them vegan-friendly. They are also naturally gluten-free. However, they are produced in a facility that may also handle nuts, soy, and sesame, so we advise caution for those with severe allergies.</div>
+      </div>
+      <div class="faq-item rv d2">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="fq-q">Q</span> Where do you source your vegetables from?
+          <span class="fq-ico">+</span>
+        </button>
+        <div class="faq-ans">PÔÔK partners with local farms across Vietnam — from the highlands of Da Lat to the fertile Mekong Delta — to source the freshest lotus roots, beetroots, carrots, and sweet potatoes.</div>
+      </div>
+      <div class="faq-item rv d3">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="fq-q">Q</span> How should I store my PÔÔK snacks to keep them fresh?
+          <span class="fq-ico">+</span>
+        </button>
+        <div class="faq-ans">Store in a cool, dry place away from direct sunlight. Once opened, consume within 7 days for the best tasting experience.</div>
+      </div>
+      <div class="faq-item rv d4">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="fq-q">Q</span> What is the small packet inside the canister?
+          <span class="fq-ico">+</span>
+        </button>
+        <div class="faq-ans">It is a non-edible desiccant (oxygen absorber) packet designed to maintain freshness. <strong>DO NOT EAT OR OPEN THIS PACKET.</strong> Keep out of reach of small children.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner ctr">
+    <div class="f-brand">
+      <div class="flogo"><img src="images/Artboard 130.png" alt="PÔÔK" onerror="this.style.display='none'"></div>
+      <div class="fbrand">PÔÔK FOOD CO.</div>
+      <div class="finfo">
+        <p>📍 Text text text text text text<br>&nbsp;&nbsp;&nbsp;text text text text</p>
+        <p>📞 000-000-0000</p><p>✉️ example@gmail.com</p>
+      </div>
+    </div>
+    <nav class="fnav">
+      <a href="story.html">Story</a><a href="products.html">Product</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-social">
+      <div class="fsoc-title">You can find Pôôk at:</div>
+      <div class="sbtns">
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> Facebook</a>
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg> Instagram</a>
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Thread</a>
+      </div>
+    </div>
+  </div>
+  <div class="fcopy">© PÔÔK, ALL RIGHT RESERVED.</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

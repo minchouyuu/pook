@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PÔÔK Snack – Real Veggies, Real Crunch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/Artboard 130.png" alt="PÔÔK Snack"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <span class="nav-logo-fb" style="display:none">PÔÔK<br><small>snack</small></span>
+  </a>
+  <div class="nav-links">
+    <a href="story.html">Story</a>
+    <a href="products.html">Product</a>
+    <a href="contact.html">Contact</a>
+    <button class="burger" id="burgerBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mob-menu" id="mobMenu">
+  <a href="story.html">Story</a>
+  <a href="products.html">Product</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ═══ HERO BANNER ═══ -->
+<section class="hero-banner has-stars">
+  <img src="images/IMG_1181.PNG" alt="PÔÔK Snack Banner" class="hero-banner-img">
+</section>
+
+<!-- ═══ INTRODUCE ═══ -->
+<section class="introduce-sec has-stars">
+  <div class="ctr">
+    <h2 class="intro-title rv">Introduce</h2>
+    <p class="intro-body rv d1">
+      PÔÔK was born from a simple idea: to transform the humble into the delightful.
+      In a land of agricultural abundance, many of Vietnam's precious vegetables are often
+      overlooked or wasted. We saw an opportunity not just to solve a problem, but to celebrate
+      our roots. We turn familiar, beloved vegetables into crispy, joyful snacks, packing
+      generations of Vietnamese food culture into every fun, flavorful crunch.
+    </p>
+    <a href="story.html" class="link-more rv d2">More →</a>
+
+    <!-- POSTER GALLERY ACCORDION -->
+    <div class="poster-scroll-wrap rv d2">
+      <div class="poster-track">
+        <div class="poster-item"><img src="images/6.png" alt="Poster 6"></div>
+        <div class="poster-item"><img src="images/7.png" alt="Poster 7"></div>
+        <div class="poster-item"><img src="images/8.png" alt="Poster 8"></div>
+        <div class="poster-item"><img src="images/9.png" alt="Poster 9"></div>
+        <div class="poster-item"><img src="images/10.png" alt="Poster 10"></div>
+        <div class="poster-item"><img src="images/11.png" alt="Poster 11"></div>
+        <div class="poster-item"><img src="images/12.png" alt="Poster 12"></div>
+        <div class="poster-item"><img src="images/13.png" alt="Poster 13"></div>
+        <div class="poster-item"><img src="images/14.png" alt="Poster 14"></div>
+        <div class="poster-item"><img src="images/15.png" alt="Poster 15"></div>
+        <div class="poster-item"><img src="images/16.png" alt="Poster 16"></div>
+        <div class="poster-item"><img src="images/17.png" alt="Poster 17"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-down"></div>
+</section>
+
+<!-- ═══ PRODUCT STRIP ═══ -->
+<section class="dark-sec has-stars-dark">
+  <div class="dark-inner ctr">
+    <h2 class="sec-title-cream rv">Product</h2>
+    <div class="pgrid">
+      <!-- Cans -->
+      <div class="pcard rv" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/cam cao 1.png" alt="Carrot Can"></div>
+        <div class="pcard-body"><span class="ctag">Can</span><div class="pname">Pôôk Can – Carrot</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <!-- Boxes -->
+      <div class="pcard rv d1" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/hộp 4 1.png" alt="Gift Box 4"></div>
+        <div class="pcard-body"><span class="ctag">Box</span><div class="pname">Pôôk Box – 4 Pack</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <div class="pcard rv d2" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/hộp 8.png" alt="Gift Box 8"></div>
+        <div class="pcard-body"><span class="ctag">Box</span><div class="pname">Pôôk Box – 8 Pack</div><div class="pprice">000.000đ</div></div>
+      </div>
+      <!-- Crate -->
+      <div class="pcard rv d3" onclick="location.href='product-detail.html'">
+        <div class="pcard-img"><img src="images/thùng 1.png" alt="Crate"></div>
+        <div class="pcard-body"><span class="ctag">Crate</span><div class="pname">Pôôk Crate</div><div class="pprice">000.000đ</div></div>
+      </div>
+    </div>
+    <div class="more-row rv">
+      <a href="products.html">View more →</a>
+    </div>
+  </div>
+  <div class="wave-up"></div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-inner ctr">
+    <div class="f-brand">
+      <div class="flogo"><img src="images/Artboard 130.png" alt="PÔÔK" onerror="this.style.display='none'"></div>
+      <div class="fbrand">PÔÔK FOOD CO.</div>
+      <div class="finfo">
+        <p>📍 Text text text text text text<br>&nbsp;&nbsp;&nbsp;text text text text</p>
+        <p>📞 000-000-0000</p>
+        <p>✉️ example@gmail.com</p>
+      </div>
+    </div>
+    <nav class="fnav">
+      <a href="story.html">Story</a>
+      <a href="products.html">Product</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-social">
+      <div class="fsoc-title">You can find Pôôk at:</div>
+      <div class="sbtns">
+        <a href="#" class="sbtn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> Facebook
+        </a>
+        <a href="#" class="sbtn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg> Instagram
+        </a>
+        <a href="#" class="sbtn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Thread
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="fcopy">© PÔÔK, ALL RIGHT RESERVED.</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

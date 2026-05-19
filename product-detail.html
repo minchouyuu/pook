@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PÔÔK – Pook Snack Can 140g</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/Artboard 130.png" alt="PÔÔK Snack"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <span class="nav-logo-fb" style="display:none">PÔÔK<br><small>snack</small></span>
+  </a>
+  <div class="nav-links">
+    <a href="story.html">Story</a>
+    <a href="products.html" class="active">Product</a>
+    <a href="contact.html">Contact</a>
+    <button class="burger" id="burgerBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="story.html">Story</a>
+  <a href="products.html">Product</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="detail-page has-stars">
+  <div class="detail-inner ctr">
+    <div class="dbcrumb">
+      <a href="index.html">🏠</a> <span>/</span>
+      <a href="products.html">Products</a> <span>/</span>
+      <span>Pook Snack Can, 140g</span>
+    </div>
+
+    <div class="detail-grid">
+
+      <!-- GALLERY: cam cao, hồng cao, tím cao, xanh cao -->
+      <div class="gallery-wrap rv">
+        <div class="gmain">
+          <button class="gnav gprev" onclick="galNav(-1)">‹</button>
+          <img id="galImg" src="images/cam cao 1.png" alt="Pook Can">
+          <div class="gdots" id="galDots"></div>
+          <button class="gnav gnext" onclick="galNav(1)">›</button>
+        </div>
+        <div class="gthumbs" id="galThumbs"></div>
+      </div>
+
+      <!-- INFO -->
+      <div class="rv d2">
+        <h1 class="dtitle">Pook Snack can, 140g</h1>
+        <p class="ddesc">Nurtured by the fertile alluvium of the Red River Delta, our carrots absorb the full intensity of tropical sunshine. PÔÔK takes this familiar kitchen staple through a precise crafting process to enhance its golden hue and natural sugar content. The result is a loud, snappy crunch — a bold transformation from a simple root into a premium, sun-kissed snacking experience.</p>
+        <div class="dprice">000.000đ</div>
+
+        <p class="flabel">Flavor</p>
+        <div class="flavor-row">
+          <!-- cam cao 1.png = orange carrot can -->
+          <button class="fp fc on"  onclick="pickFlavor(this,'cam cao 1.png')">Carrot</button>
+          <!-- tím cao 1.png = purple sweet potato can -->
+          <button class="fp fs"     onclick="pickFlavor(this,'tím cao 1.png')">Sweet Potato</button>
+          <!-- xanh cao.png = blue/green lotus root can -->
+          <button class="fp fl2c"   onclick="pickFlavor(this,'xanh cao.png')">Lotus Root</button>
+          <!-- hồng cao 1.png = pink beetroot can -->
+          <button class="fp fb"     onclick="pickFlavor(this,'hồng cao 1.png')">Beetroot</button>
+        </div>
+
+        <div class="safety-box">
+          <h4>⚠️ Safety Warning</h4>
+          <p>Ready-to-eat snack. For the ultimate tasting experience, consume within 7 days after opening. Inside this canister, you will find a non-edible desiccant (oxygen absorber) packet designed to maintain freshness; <strong>DO NOT EAT OR OPEN THIS PACKET.</strong> Keep out of reach of small children. Do not consume the product if the safety foil seal is damaged, bloated, or if the product shows signs of discoloration or oxidation.</p>
+        </div>
+
+        <button class="btn-primary">Add to cart →</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner ctr">
+    <div class="f-brand">
+      <div class="flogo"><img src="images/Artboard 130.png" alt="PÔÔK" onerror="this.style.display='none'"></div>
+      <div class="fbrand">PÔÔK FOOD CO.</div>
+      <div class="finfo">
+        <p>📍 Text text text text text text<br>&nbsp;&nbsp;&nbsp;text text text text</p>
+        <p>📞 000-000-0000</p><p>✉️ example@gmail.com</p>
+      </div>
+    </div>
+    <nav class="fnav">
+      <a href="story.html">Story</a><a href="products.html">Product</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-social">
+      <div class="fsoc-title">You can find Pôôk at:</div>
+      <div class="sbtns">
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> Facebook</a>
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg> Instagram</a>
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Thread</a>
+      </div>
+    </div>
+  </div>
+  <div class="fcopy">© PÔÔK, ALL RIGHT RESERVED.</div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  /* Gallery images: 4 tall cans matching the 4 flavors */
+  const GAL_IMGS = [
+    'cam cao 1.png',   /* Carrot – orange */
+    'hồng cao 1.png',  /* Beetroot – pink */
+    'tím cao 1.png',   /* Sweet Potato – purple */
+    'xanh cao.png'     /* Lotus Root – blue/green */
+  ];
+  initGallery(GAL_IMGS);
+</script>
+</body>
+</html>

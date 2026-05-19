@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PÔÔK – Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/Artboard 130.png" alt="PÔÔK Snack"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <span class="nav-logo-fb" style="display:none">PÔÔK<br><small>snack</small></span>
+  </a>
+  <div class="nav-links">
+    <a href="story.html">Story</a>
+    <a href="products.html">Product</a>
+    <a href="contact.html" class="active">Contact</a>
+    <button class="burger" id="burgerBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="story.html">Story</a>
+  <a href="products.html">Product</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- Đã khôi phục lại hiệu ứng mảnh vỡ vụn lơ lửng -->
+<section class="contact-page has-stars has-shards has-shards-bl">
+  <div class="contact-inner ctr">
+    <div class="contact-grid">
+
+      <!-- LEFT: info -->
+      <div class="rv">
+        <h1 class="contact-title">Contact us</h1>
+        <p class="contact-co">PÔÔK FOOD CO.</p>
+        <div class="contact-details">
+          <p>📍 Text text text text text text<br>&nbsp;&nbsp;&nbsp;text text text text</p>
+          <p>📞 000-000-0000</p>
+          <p>✉️ example@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: form -->
+      <div class="cform rv d2">
+        <div class="fgrid">
+          <div class="fg">
+            <label>Full Name *</label>
+            <input type="text" id="fname" placeholder="Enter your full name">
+          </div>
+          <div class="fg">
+            <label>Phone Number *</label>
+            <input type="tel" id="fphone" placeholder="Enter phone number">
+          </div>
+          <div class="fg s2">
+            <label>Email *</label>
+            <input type="email" id="femail" placeholder="Enter email address">
+          </div>
+          <div class="fg s2">
+            <label>Contact Information *</label>
+            <textarea id="fmsg" rows="4" placeholder="Enter contact information"></textarea>
+          </div>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center" onclick="submitForm()">
+          Send →
+        </button>
+        <div class="form-ok" id="formOk">✅ Sent successfully! We'll get back to you soon.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner ctr">
+    <div class="f-brand">
+      <div class="flogo"><img src="images/Artboard 130.png" alt="PÔÔK" onerror="this.style.display='none'"></div>
+      <div class="fbrand">PÔÔK FOOD CO.</div>
+      <div class="finfo">
+        <p>📍 Text text text text text text<br>&nbsp;&nbsp;&nbsp;text text text text</p>
+        <p>📞 000-000-0000</p><p>✉️ example@gmail.com</p>
+      </div>
+    </div>
+    <nav class="fnav">
+      <a href="story.html">Story</a><a href="products.html">Product</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="f-social">
+      <div class="fsoc-title">You can find Pôôk at:</div>
+      <div class="sbtns">
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> Facebook</a>
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg> Instagram</a>
+        <a href="#" class="sbtn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Thread</a>
+      </div>
+    </div>
+  </div>
+  <div class="fcopy">© PÔÔK, ALL RIGHT RESERVED.</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
